@@ -6,7 +6,7 @@ package pers.hanchao.dp01strategy.d01;
  **/
 public class RedheadDuck01 extends Duck01{
     public RedheadDuck01(String name) {
-        super(name);
+        super("红头鸭[" + name + "]");
     }
 
     @Override
