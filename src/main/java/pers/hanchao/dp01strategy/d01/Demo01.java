@@ -14,13 +14,17 @@ public class Demo01 {
     public static void main(String[] args) {
         //绿头鸭
         Duck01 duck = new MallardDuck01("汤姆");
+        duck.display();
         duck.quack();
         duck.swim();
-        duck.display();
+        duck.fly();
+
+        System.out.println();
         //红头鸭
         duck = new RedheadDuck01("杰瑞");
+        duck.display();
         duck.quack();
         duck.swim();
-        duck.display();
+        duck.fly();
     }
 }

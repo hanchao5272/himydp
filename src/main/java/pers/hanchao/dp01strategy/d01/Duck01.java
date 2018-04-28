@@ -37,6 +37,13 @@ public abstract class Duck01 {
     }
 
     /**
+     * <p>飞行</p>
+     * @author hanchao 2018/4/28 20:42
+     **/
+    void fly(){
+        System.out.println(name + ": 正在飞行！");
+    }
+    /**
      * <p>外观</p>
      * @author hanchao 2018/4/28 0:07
      **/
