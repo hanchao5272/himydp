@@ -27,6 +27,22 @@ public abstract class Duck15 {
         this.name = name;
     }
 
+    public FlyBehavior getFlyBehavior() {
+        return flyBehavior;
+    }
+
+    public void setFlyBehavior(FlyBehavior flyBehavior) {
+        this.flyBehavior = flyBehavior;
+    }
+
+    public QuackBehavior getQuackBehavior() {
+        return quackBehavior;
+    }
+
+    public void setQuackBehavior(QuackBehavior quackBehavior) {
+        this.quackBehavior = quackBehavior;
+    }
+
     /**
      * <p>游泳</p>
      * @author hanchao 2018/4/28 21:57

@@ -1,5 +1,7 @@
 package pers.hanchao.dp01strategy.d15;
 
+import pers.hanchao.dp01strategy.d15.strategy.fly.impl.FlyWithRocket;
+
 /**
  * <p>测试：策略模式</p>
  *
@@ -45,6 +47,21 @@ public class Demo15 {
         duck.swim();
         System.out.print(duck.getName());
         duck.performQuack();
+        System.out.print(duck.getName());
+        duck.performFly();
+
+        System.out.println();
+        //测试模型鸭
+        duck = new ModelDuck15("克拉克");
+        duck.display();
+        duck.swim();
+        System.out.print(duck.getName());
+        duck.performQuack();
+        System.out.print(duck.getName());
+        duck.performFly();
+        //模型鸭进行变身
+        System.out.println(duck.getName() + ": 改造...");
+        duck.setFlyBehavior(new FlyWithRocket());
         System.out.print(duck.getName());
         duck.performFly();
     }
