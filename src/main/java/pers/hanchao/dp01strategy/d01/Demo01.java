@@ -17,8 +17,9 @@ public class Demo01 {
          * 0 绿头鸭
          * 1 红头鸭
          * 2 橡皮鸭
+         * 3 诱饵鸭
          */
-        int type = 2;
+        int type = 3;
         switch (type) {
             case 0:
                 //绿头鸭
@@ -31,6 +32,10 @@ public class Demo01 {
             case 2:
                 //橡皮鸭
                 duck = new RubberDuck01("托尼");
+                break;
+            case 3:
+                //诱饵鸭
+                duck = new DecoyDuck01("索尔");
                 break;
             default:
                 break;

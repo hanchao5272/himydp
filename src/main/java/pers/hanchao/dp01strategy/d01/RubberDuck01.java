@@ -10,6 +10,10 @@ public class RubberDuck01 extends Duck01 {
     }
 
     @Override
+    void fly(){
+        System.out.println(super.getName() + "：不会飞行.");
+    }
+    @Override
     void display() {
         System.out.println(super.getName() + ": 外观是橡皮鸭.");
     }
