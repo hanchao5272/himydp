@@ -1,14 +1,14 @@
-package pers.hanchao.dp01strategy.d01;
+package pers.hanchao.dp01strategy.d11;
 
 /**
  * <p>鸭子-超类，实现部分共用方法，抽象部分个性方法</p>
  * @author hanchao 2018/4/28 0:03
  **/
-public abstract class Duck01 {
+public abstract class Duck11 {
     /** 鸭子名 */
     private String name;
 
-    public Duck01(String name) {
+    public Duck11(String name) {
         this.name = name;
     }
 

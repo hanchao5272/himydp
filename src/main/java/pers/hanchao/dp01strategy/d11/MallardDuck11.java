@@ -1,11 +1,11 @@
-package pers.hanchao.dp01strategy.d01;
+package pers.hanchao.dp01strategy.d11;
 
 /**
  * <p>绿头鸭</p>
  * @author hanchao 2018/4/28 0:08
  **/
-public class MallardDuck01 extends Duck01 {
-    public MallardDuck01(String name) {
+public class MallardDuck11 extends Duck11 {
+    public MallardDuck11(String name) {
         super("绿头鸭[" + name + "]");
     }
 
