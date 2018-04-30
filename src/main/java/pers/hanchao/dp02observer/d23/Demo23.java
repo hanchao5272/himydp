@@ -20,7 +20,10 @@ public class Demo23 {
         Observer concurrentConditionDisplay = new ConcurrentConditionDisplay23(weatherData);
         Observer forecastDisplay = new ForecastDisplay23(weatherData);
         Observer statisticsDisplay = new StatisticsDisplay23(weatherData);
-        //以推送的形式发送信息
+        //以拉取的形式发送信息
+        weatherData.measurementsChanged(11.1F,22.2F,33F);
+        weatherData.measurementsChanged(2,3.3F,11.5F);
+        //以推送的形式发送数据
         weatherData.measurementsChanged(11.1F,22.2F,33F);
         weatherData.measurementsChanged(2,3.3F,11.5F);
     }

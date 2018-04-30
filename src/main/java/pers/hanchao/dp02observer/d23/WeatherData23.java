@@ -19,7 +19,7 @@ public class WeatherData23 extends Observable{
     }
 
     /**
-     * 气象站数据更新时
+     * 气象站数据更新时--“拉取”
      */
     public void measurementsChanged(float temperature,float humidity,float pressure){
         //获取最新数据
@@ -30,6 +30,20 @@ public class WeatherData23 extends Observable{
         this.setChanged();
         //通知所有观察者
         notifyObservers();
+    }
+
+    /**
+     * 气象站数据更新时--“推送”
+     */
+    public void measurementsChanged2(WeatherEntity weatherEntity){
+        //获取最新数据
+        this.temperature = weatherEntity.getTemperature();
+        this.humidity = weatherEntity.getHumidity();
+        this.pressure = weatherEntity.getPressure();
+        //表示状态已经改变
+        this.setChanged();
+        //通知所有观察者
+        notifyObservers(weatherEntity);
     }
 
     public float getTemperature() {

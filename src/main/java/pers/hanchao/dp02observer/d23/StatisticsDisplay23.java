@@ -36,10 +36,19 @@ public class StatisticsDisplay23 implements Observer,Display23  {
     public void update(Observable o, Object arg) {
         //如果可观察者是气象站数据，则进行更新
         if (o instanceof WeatherData23){
-            WeatherData23 weatherData = (WeatherData23) o;
-            this.temperature = weatherData.getTemperature();
-            this.humidity = weatherData.getHumidity();
-            this.pressure = weatherData.getPressure();
+            //可观察者推送数据给观察者,数据来源-数据包
+            if (arg instanceof WeatherEntity){
+                WeatherEntity weatherEntity = (WeatherEntity) arg;
+                this.temperature = weatherEntity.getTemperature();
+                this.humidity = weatherEntity.getHumidity();
+                this.pressure = weatherEntity.getPressure();
+            }else {//从可观察者对象拉取数据，数据来与-可观察者
+                WeatherData23 weatherData = (WeatherData23) o;
+                this.temperature = weatherData.getTemperature();
+                this.humidity = weatherData.getHumidity();
+                this.pressure = weatherData.getPressure();
+            }
+            //显示天气
             display();
         }
     }
