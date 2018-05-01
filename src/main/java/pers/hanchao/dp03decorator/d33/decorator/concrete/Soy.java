@@ -1,7 +1,7 @@
-package pers.hanchao.dp3decorator.d33.decorator.concrete;
+package pers.hanchao.dp03decorator.d33.decorator.concrete;
 
-import pers.hanchao.dp3decorator.d33.component.Beverage33;
-import pers.hanchao.dp3decorator.d33.decorator.CondimentDecorator33;
+import pers.hanchao.dp03decorator.d33.component.Beverage33;
+import pers.hanchao.dp03decorator.d33.decorator.CondimentDecorator33;
 
 /**
  * <p>配料豆浆-一种具体装饰者</p>

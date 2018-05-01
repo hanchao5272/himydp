@@ -1,6 +1,6 @@
-package pers.hanchao.dp3decorator.d33.decorator;
+package pers.hanchao.dp03decorator.d33.decorator;
 
-import pers.hanchao.dp3decorator.d33.component.Beverage33;
+import pers.hanchao.dp03decorator.d33.component.Beverage33;
 
 /**
  * <p>配料装饰者-抽象Decorator类</p>

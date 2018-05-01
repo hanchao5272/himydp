@@ -1,6 +1,4 @@
-package pers.hanchao.dp3decorator.d32;
-
-import pers.hanchao.dp3decorator.d31.DarkRoast31;
+package pers.hanchao.dp03decorator.d32;
 
 /**
  * <p>配料作为成员变量，每种咖啡是一个子类</p>

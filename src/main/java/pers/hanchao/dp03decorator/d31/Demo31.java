@@ -1,6 +1,4 @@
-package pers.hanchao.dp3decorator.d31;
-
-import pers.hanchao.dp3decorator.d32.Beverage32;
+package pers.hanchao.dp03decorator.d31;
 
 /**
  * <p>每种组合都是一个子类</p>
