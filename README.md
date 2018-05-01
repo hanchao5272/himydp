@@ -198,7 +198,19 @@
 2. 配料调整价格或增减配料，只需修改自己的代码
 3. 可以动态的选择配料
 
+### 3.4.装饰者模式总结
+真实世界的装饰者：I/O
+1. Component:InputStream
+2. Decorator:FilterInputStream
+3. ConcreteComponent:FileInputStream/StringBufferInputStream/ByteArrayInputStream
+4. ConcreteDecorator:PushbackInputStream/BufferedInputStream/DataInputStream/LineNumberInputStream
+示例：InputStream inputStream = new LineNumberInputStream(new BufferedInputStream(new FileInputStream("c.txt")));
 
+装饰者的不足：需要定义大量的小类，不易理解
+
+装饰者模式：动态的将责任附加到对象上。想要扩展功能，装饰者比继承更加具有弹性。
+
+设计原则：对扩展开发，对修改关闭。
 
 
 
